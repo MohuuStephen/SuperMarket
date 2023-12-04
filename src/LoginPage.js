@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Loginperformance } from "./connect"
 
 export const Login=()=>
 {
@@ -19,7 +20,7 @@ export const Login=()=>
 
     const onlog=async()=>
     {
-       
+        await Loginperformance(user);
         window.location.assign("/");
 
     }
